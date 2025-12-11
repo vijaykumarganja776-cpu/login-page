@@ -44,12 +44,10 @@
       cursor:pointer;
     }
 
-    /* input section */
     .input-box{
       display:block;
     }
 
-    /* Result section hidden initially */
     .result{
       display:none;
       margin-top:30px;
@@ -88,8 +86,8 @@
 <body>
 
 <div class="card">
-
-  <!-- FIRST PAGE -->
+  
+  
   <div class="input-box" id="inputBox">
     <h1>HELLO BUDDY</h1>
     <p>Please Enter Your Birth date!</p>
@@ -99,7 +97,7 @@
     <button onclick="checkdate()">Submit</button>
   </div>
 
-  <!-- SECOND PAGE -->
+  
   <div class="result" id="resultBox">
     <h2 id="op"></h2>
     <div id="emoji" style="font-size:60px;"></div>
@@ -125,10 +123,8 @@
     return; // stop here, don’t continue
   }
 
-    // hide first page
     document.getElementById("inputBox").style.display = "none";
 
-    // show second page
     document.getElementById("resultBox").style.display = "block";
 
     if(date === "14-11-2003"){
