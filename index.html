@@ -93,7 +93,8 @@
   <div class="input-box" id="inputBox">
     <h1>HELLO BUDDY</h1>
     <p>Please Enter Your Birth date!</p>
-    <input id="user" placeholder="DD-MM-YYYY">
+    <input id="user" placeholder="DD-MM-YYYY" required>
+    <p id="error"></p>
     <br><br>
     <button onclick="checkdate()">Submit</button>
   </div>
@@ -117,7 +118,12 @@
 
 <script>
   function checkdate(){
+    
     let date = document.getElementById("user").value.trim();
+    if(date === ""){
+    error.textContent = "*Date of birth required";
+    return; // stop here, don’t continue
+  }
 
     // hide first page
     document.getElementById("inputBox").style.display = "none";
