@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wish To Anyone!</title>
+
+  <style>
+    body{
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:#ffd7e0;
+    }
+
+    .card{
+      max-width:800px;
+      margin:30px auto;
+      background:#fff7f9;
+      padding:25px;
+      border-radius:14px;
+      text-align:center;
+      box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    }
+
+    h1{
+      font-family:'Times New Roman', Times, serif;
+      color:#083b7b;
+    }
+
+    input{
+      padding:12px;
+      border-radius:25px;
+      border:2px solid #7bb26a;
+      width:220px;
+    }
+
+    button{
+      padding:10px 15px;
+      background:#59b83c;
+      border:none;
+      border-radius:10px;
+      color:white;
+      font-weight:bold;
+      cursor:pointer;
+    }
+
+    /* input section */
+    .input-box{
+      display:block;
+    }
+
+    /* Result section hidden initially */
+    .result{
+      display:none;
+      margin-top:30px;
+    }
+
+    .result h2{
+      font-size:42px;   /* increased font size */
+      color:#083b7b;
+    }
+
+    .blasts{
+      font-size:50px;
+      display:flex;
+      justify-content:space-between;
+      margin-top:15px;
+    }
+
+    .cute-gif{
+      margin-top:20px;
+      text-align:center;
+    }
+
+    .cute-gif img{
+      width:200px;
+      height:auto;
+    }
+
+    @media(max-width:420px){
+      .result h2{font-size:30px;}
+      .blasts{font-size:25px;}
+      .cute-gif img{width:100px;}
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="card">
+
+  <!-- FIRST PAGE -->
+  <div class="input-box" id="inputBox">
+    <h1>HELLO BUDDY</h1>
+    <p>Please Enter Your Birth date!</p>
+    <input id="user" placeholder="DD-MM-YYYY">
+    <br><br>
+    <button onclick="checkdate()">Submit</button>
+  </div>
+
+  <!-- SECOND PAGE -->
+  <div class="result" id="resultBox">
+    <h2 id="op"></h2>
+    <div id="emoji" style="font-size:60px;"></div>
+
+    <div class="blasts">
+      <div>🖤❤️🖤</div>
+      <div>🖤❤️🖤</div>
+    </div>
+
+    <div class="cute-gif">
+      <img src="https://media.giphy.com/media/IcJ6n6VJNjRNS/giphy.gif" alt="Cute GIF">
+    </div>
+  </div>
+
+</div>
+
+<script>
+  function checkdate(){
+    let date = document.getElementById("user").value.trim();
+
+    // hide first page
+    document.getElementById("inputBox").style.display = "none";
+
+    // show second page
+    document.getElementById("resultBox").style.display = "block";
+
+    if(date === "14-11-2003"){
+      op.innerText = "Happy Birthday #VIJAY!";
+      emoji.innerText = "🎂";
+    } else if(date === "05-02-2002"){
+      op.innerText = "Happy Birthday VIJJU AKKA💫";
+      emoji.innerText = "🎂";
+    } else if(date === "27-07-1993"){
+      op.innerText = "Happy Birthday SOWJI AKKA💫";
+      emoji.innerText = "🎂";
+    } else if(date === "06-12-1988"){
+      op.innerText = "Happy Birthday SAILU MAA💫";
+      emoji.innerText = "🎂";
+    } else if(date === "21-05-2007"){
+      op.innerText = "Happy Birthday HIMA TULASI💫";
+      emoji.innerText = "🎂";
+    }else if(date === "19-04-2007"){
+      op.innerText = "Happy Birthday KEERTHI PRADHA💫";
+      emoji.innerText = "🎂";
+    }else if(date === "30-07-2008"){
+      op.innerText = "Happy Birthday ANJALI💜🦋💫";
+      emoji.innerText = "🎂";
+    }else if(date === "31-03-2002"){
+      op.innerText = "Happy Birthday ROHIT ANNAYA💫";
+      emoji.innerText = "🎂";
+    }else if(date === "15-02-2002"){
+      op.innerText = "Happy Birthday VENI AKKA💫";
+      emoji.innerText = "🎂";
+    }else if(date === "07-09-2005"){
+      op.innerText = "Happy Birthday REKHA💫";
+      emoji.innerText = "🎂";
+    }else if(date === "28-11-2005"){
+      op.innerText = "Happy Birthday VIJJU💫";
+      emoji.innerText = "🎂";
+    }else if(date === "28-05-2006"){
+      op.innerText = "Happy Birthday KEERTHI💫";
+      emoji.innerText = "🎂";
+    }else if(date === "03-08-2006"){
+      op.innerText = "Happy Birthday RAAJI💫";
+      emoji.innerText = "🎂";
+    }else if(date === "02-04-2004"){
+      op.innerText = "Happy Birthday TINGARI🐖💫";
+      emoji.innerText = "🎂";
+    }else if(date === "12-03-2003"){
+      op.innerText = "Happy Birthday SRIHARI💫";
+      emoji.innerText = "🎂";
+    }else if(date === "23-08-2001"){
+      op.innerText = "Happy Birthday AKKA💫";
+      emoji.innerText = "🎂";
+    }else if(date === "19-08-2005"){
+      op.innerText = "Happy Birthday NARESH💫";
+      emoji.innerText = "🎂";
+    }else if(date === "21-06-2006"){
+      op.innerText = "Happy Birthday SIVAMANI💫";
+      emoji.innerText = "🎂";
+    }else if(date === "30-06-2004"){
+      op.innerText = "Happy Birthday DAIVA🐖💫";
+      emoji.innerText = "🎂";
+    }else if(date === "28-02-200"){
+      op.innerText = "Happy Birthday SANDEEP👻💫";
+      emoji.innerText = "🎂";
+    }else if(date === "27-07-2004"){
+      op.innerText = "Happy Birthday LAXMAN👻💫";
+      emoji.innerText = "🎂";
+    }else if(date === "05-12-2003"){
+      op.innerText = "Happy Birthday VIJAY💫";
+      emoji.innerText = "🎂";
+    }
+    else {
+      op.innerText = "HAPPY BIRTHDAY DUDE🖤💫";
+      emoji.innerText = "🎊";
+    }
+  }
+</script>
+</body>
+</html>
